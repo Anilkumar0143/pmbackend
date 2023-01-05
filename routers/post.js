@@ -4,7 +4,7 @@ const projectsController = require('../controllers/session')
 const router = express.Router();
 
 
-router.get('/projects', projectsController.getProject);
-// router.delete('/delete', projectsController.clearProject);
+router.post('/project', projectsController.saveProject);
 
-module.exports = router;
+
+module.exports = postrouter;

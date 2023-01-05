@@ -9,14 +9,14 @@
     "routes": [
         {
             "src": "/projects",
-            "dest": "/"
+            "dest": "./routers/post.js"
         },
         {
             "src": "/project",
             "methods": [
                 "POST"
             ],
-            "dest": "/(.*)"
+            "dest": "./routers/post.js"
         }
     ]
 }
