@@ -1,22 +1,16 @@
 {
     "version": 2,
+    "name": "pmbackend",
     "builds": [
         {
-            "src": "./index.js",
+            "src": "index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/projects",
-            "dest": "/"
-        },
-        {
-            "src": "/project",
-            "methods": [
-                "POST"
-            ],
-            "dest": "./routers/post.js"
+            "src": "/(.*)",
+            "dest": "/index.js"
         }
     ]
 }

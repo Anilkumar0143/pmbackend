@@ -15,9 +15,7 @@ mongo.set('strictQuery', true);
 const connectdb = require('./db/connectdb');
 connectdb();
 const Router = require('./routers/main');
-const postRouter = require('./routers/post');
 app.use(Router);
-app.use(postRouter);
 
 app.listen(port, () => {
   console.log('Server listening on port 3000');
