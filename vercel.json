@@ -6,13 +6,17 @@
             "use": "@vercel/node"
         }
     ],
-    
-  "routes": [
-           {
-            "src": "/",
-            "dest": "/projects"
+    "routes": [
+        {
+            "src": "/projects",
+            "dest": "/"
         },
-    { "src": "/project", "methods": ["POST"], "dest": "./routers/main.js" }
-  ]
-
+        {
+            "src": "/project",
+            "methods": [
+                "POST"
+            ],
+            "dest": "./routers/main.js"
+        }
+    ]
 }
