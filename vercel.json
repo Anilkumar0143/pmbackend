@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/projects",
-            "dest": "./routers/main.js"
+            "dest": "/"
         },
         {
             "src": "/project",
