@@ -16,7 +16,7 @@
             "methods": [
                 "POST"
             ],
-            "dest": "./routers/main.js"
+            "dest": "/(.*)"
         }
     ]
 }
